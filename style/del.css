@@ -1,0 +1,11 @@
+/* CSS Document */
+.delivery {
+	direction:rtl !important;
+	margin-right: 10px;
+	margin-left:10px;
+	text-align:justify;
+	font-size=-1;
+	}
+
+.delivery p {
+	direction:rtl;}	

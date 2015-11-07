@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Go Shopping</title>
+<link rel="stylesheet" type="text/css" href="style/up.css">
+<link rel="stylesheet" type="text/css" href="style/del.css">
+<SCRIPT LANGUAGE="JavaScript">
+
+var item = new Array();
+
+
+c=0; item[c]=new Array("index.html","","DemoSite","index,main,start,home,front","Demonstration search engine data about an imagined but probable internet site.");
+c++; item[c]=new Array("about.htm","","About Me","about,author,contact,email,who","Contact details and general information about the creator of the site and what the site is about.");
+c++; item[c]=new Array("links.htm","","Links page","links,more,where,similar,friends","Links to my favourite sites which I find interesting. Other friends sites which have similar interests to my own.");
+c++; item[c]=new Array("main.htm","main/","Main Page","content,main,focus","The main part of my site which contains what you have come to see. Lots of stuff like that and more great things. All in a sub directory.");
+c++; item[c]=new Array("logo.jpg","main/images/","Link Logo","link,image,logo,graphic","The logo.jpg is just a small image which you can place on your site as a link to me. It's in a second level subdirectory.");
+
+page="<html><head><title>Search Results</title></head><body bgcolor='white'><center><table border=0 cellspacing=10 width=80%>";
+
+
+function search(frm) {
+win = window.open("","","scrollbars");
+win.document.write(page);
+txt = frm.srchval.value.split(" ");
+fnd = new Array(); total=0;
+for (i = 0; i < item.length; i++) {
+fnd[i] = 0; order = new Array(0, 4, 2, 3);
+for (j = 0; j < order.length; j++)
+for (k = 0; k < txt.length; k++)
+if (item[i][order[j]].toLowerCase().indexOf(txt[k]) > -1 && txt[k] != "")
+fnd[i] += (j+1);
+}
+for (i = 0; i < fnd.length; i++) {
+n = 0; w = -1;
+for (j = 0;j < fnd.length; j++)
+if (fnd[j] > n) { n = fnd[j]; w = j; };
+if (w > -1) total += show(w, win, n);
+fnd[w] = 0;
+}
+win.document.write("</table><br>Total found: "+total+"<br></body></html>");
+win.document.close();
+}
+function show(which,wind,num) {
+link = item[which][1] + item[which][0]; 
+line = "<tr><td><a href='"+link+"'>"+item[which][2]+"</a> Score: "+num+"<br>";
+line += item[which][4] + "<br>"+link+"</td></tr>";
+wind.document.write(line);
+return 1;
+}
+// End —>
+</script>
+</HEAD>
+
+<!— STEP TWO: Copy this code into the BODY of your HTML document —>
+</head>
+
+
+<body>
+
+<div class="head col-12">
+ 
+ <div class="menu col-9">
+ <ul>
+ <a href="#"> <li class="col-1">  ورود/ثبت نام  </li> </a>
+ <a href="#"> <li class="col-1">  سبد خرید </li></a>
+ <a href="#"> <li class="col-1"> کتاب ها</li></a>
+ <a href="#"><li class="col-1"> لپ تاپ</li></a>
+ <a href="#"><li class="col-1"> موسیقی</li></a>
+ <a href="#"><li class="col-1"> هنر</li></a>
+ </ul>
+ </div>
+ 
+ <div class="logo col-1">
+ <img src="image/shopping arm.jpg" >
+ </div>
+ <div class="moto col-1"> <span> خرید اینترنتی,فروشگاه go shopping </span></div> 
+ </div>
+ 
+<center>
+
+<form method=get action="javascript:void(0)" onsubmit="search(this); return false;">
+<tr><td><input type=text name=srchval value=""><input type=submit value="Search"></td></tr>
+</form>
+
+</center>
+
+<div class="delivery col-11"><h1> <strong>پرداخت در محل</strong></h1>
+<h1> روش‌های پرداخت </h1>
+<h2> 1- پرداخت از طریق درگاه اینترنتی </h2>
+
+همگی کاربران go shopping می‌توانند در هنگام ثبت سفارش، از طریق درگاه اینترنتی بانک‌های سامان و پارسیان در سایت go shopping و یا از طریق پنل اینترنت بانک شخصی خود، هزینه سفارش خود را به صورت آنلاین پرداخت و در قسمت پرداخت در سبد خرید ثبت کنند. پرداخت موفق مبلغ به منزله ثبت قطعی این پرداخت برای سفارش است و نیازی به اطلاع دادن آن نیست و سفارش به صورت خودکار وارد مراحل آماده سازی و ارسال می‏‌شود.
+توجه داشته باشید که تحویل گیرنده سفارش هنگام دریافت کالا، باید کارت شناسایی همراه داشته باشد.
+لازم به ذکر است که پرداخت اینترنتی باعث ایجاد الویت و تسریع در پردازش سفارش کاربران می‌شود.
+ 
+ <h2>  - چگونگی پرداخت اینترنتی </h2>
+کاربران محترم سایت go shopping می‌توانند مبلغ سفارش خود را با استفاده از همه کارت‌های بانکی عضو شبکه شتاب پرداخت کنند. هم اکنون، با کارت بانک‏‌های ملی، صادرات، پارسیان، سامان، اقتصاد نوین، پاسارگاد، ملت، کشاورزی، توسعه صادرات، صنعت و معدن، بانک سینا و کارآفرین امکان خرید اینترنتی وجود دارد. هنگام پرداخت اینترنتی اطلاعات زیر از شما پرسیده می‌شود که پس از وارد کردن آنها و تایید پرداخت، از موفقیت عملیات پرداخت خود مطلع می‌شوید.
+ 
+<h2>  شماره 16 رقمی کارت </h2>
+این شماره در کارت همه بانک‏‌ها، بر روی کارت درج شده است.
+ 
+<h2>  رمز خرید اینترنتی یا رمز دوم </h2>
+برای پرداخت اینترنتی لازم است قبلاْ رمز دوم (رمز خرید اینترنتی) کارت بانکی خود را فعال کرده باشید.
+رمز دوم (رمز خرید اینترنتی)، با رمزی که شما هنگام استفاده از دستگاه‌‏های خود پرداز وارد می‌کنید، تفاوت دارد. برخی از بانک‌ها مثل بانک سامان معمولاً رمز اینترنتی را هنگام صدور کارت تحویل می‌دهند، اما کارت بیشتر بانک‏‌ها در زمان تحویل، رمز خرید اینترنتی ندارند، برای فعال کردن رمز خرید اینترنتی، می‏‌توانید به دستگاه خودپرداز بانک صادر کننده کارت خود مراجعه و کارت خود را وارد کنید و بخش عملیات رمز را انتخاب کنید. سپس، در بخش رمز دوم یا رمز اینترنتی، رمز خود را انتخاب کنید.
+
+<h2> 2- پرداخت در محل تحویل</h2>
+به کاربران محترم توصیه می‌شود جهت تسریع در پردازش سفارش، پرداخت خود را به صورت اینترنتی انجام دهند. با وجود این، برای آسودگی بیشتر آن دسته از مشتریانی که تمایل دارند هزینه سفارش خود را هنگام دریافت آن پرداخت کنند، go shopping این امکان را نیز فراهم آورده است که در صورتی که آدرس تحویل سفارش آنها، تهران یا یکی از شهرهای تحت پوشش تحویل اکسپرس دیجی‌کالا باشد، هزینه را هنگام تحویل گرفتن سفارش، به یکی از روش‌های زیر پرداخت کنند.
+لازم به ذکر است، سفارش‌هایی که از طریق باربری ارسال می‌شوند یا مبلغ آنها بیشتر از سی میلیون ریال است، لازم است پیش از ارسال، از طریق پرداخت کارت به کارت یا پرداخت اینترنتی تسویه شوند.
+<h2>- پرداخت با کارت بانکی در محل تحویل</h2>
+  از آنجا که همگی ماموران تحویل سفارش دیجی‏‌کالا دستگاه‏‏‌های کارت خوان سیار (POS) همراه دارند، می‌توان هنگام تحویل سفارش در محل، با استفاده از کارت‌های عضو شبکه شتاب پرداخت خود را انجام داد.
+  <h2> - پرداخت از طریق سامانه USSD در محل تحویل</h2>
+  هزینه سفارش را از طریق تلفن همراه نیز می‌توان با استفاده از سامانه USSD، در محل تحویل پرداخت کرد.
+  <h2>- پرداخت نقدی در محل تحویل</h2>
+  برای آسودگی بیشتر آن دسته از مشتریانی که تمایل به پرداخت نقدی هزینه سفارش خود دارند، go shopping امکان پرداخت نقدی در محل را نیز فراهم آورده است.
+  
+
+
+
+
+
+ </div>
+
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Go Shopping</title>
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<link rel="stylesheet" type="text/css" href="style/up.css">
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Original: Dion (biab@iinet.net.au) -->
+<!-- Web Site: http://www.iinet.net.au/~biab-->
+
+<!-- This script and many more are available free online at -->
+<!--The JavaScript Source!! http://www.javascriptsource.com -->
+
+<!-- Begin
+var item = new Array();
+
+/* Here is where all the magic happens. 
+Just enter as many additional pages that
+that you want to search, then fill in the
+additional listings for each page.
+*/
+
+// "Page Name","path","Page Title","Many,Key,Words","Descriptive Comments"
+
+c=0; item[c]=new Array("index.html","","DemoSite","index,main,start,home,front","Demonstration search engine data about an imagined but probable internet site.");
+c++; item[c]=new Array("about.htm","","About Me","about,author,contact,email,who","Contact details and general information about the creator of the site and what the site is about.");
+c++; item[c]=new Array("links.htm","","Links page","links,more,where,similar,friends","Links to my favourite sites which I find interesting. Other friends sites which have similar interests to my own.");
+c++; item[c]=new Array("main.htm","main/","Main Page","content,main,focus","The main part of my site which contains what you have come to see. Lots of stuff like that and more great things. All in a sub directory.");
+c++; item[c]=new Array("logo.jpg","main/images/","Link Logo","link,image,logo,graphic","The logo.jpg is just a small image which you can place on your site as a link to me. It's in a second level subdirectory.");
+
+page="<html><head><title>Search Results</title></head><body bgcolor='white'><center><table border=0 cellspacing=10 width=80%>";
+
+
+function search(frm) {
+win = window.open("","","scrollbars");
+win.document.write(page);
+txt = frm.srchval.value.split(" ");
+fnd = new Array(); total=0;
+for (i = 0; i < item.length; i++) {
+fnd[i] = 0; order = new Array(0, 4, 2, 3);
+for (j = 0; j < order.length; j++)
+for (k = 0; k < txt.length; k++)
+if (item[i][order[j]].toLowerCase().indexOf(txt[k]) > -1 && txt[k] != "")
+fnd[i] += (j+1);
+}
+for (i = 0; i < fnd.length; i++) {
+n = 0; w = -1;
+for (j = 0;j < fnd.length; j++)
+if (fnd[j] > n) { n = fnd[j]; w = j; };
+if (w > -1) total += show(w, win, n);
+fnd[w] = 0;
+}
+win.document.write("</table><br>Total found: "+total+"<br></body></html>");
+win.document.close();
+}
+function show(which,wind,num) {
+link = item[which][1] + item[which][0]; 
+line = "<tr><td><a href='"+link+"'>"+item[which][2]+"</a> Score: "+num+"<br>";
+line += item[which][4] + "<br>"+link+"</td></tr>";
+wind.document.write(line);
+return 1;
+}
+// End —>
+</script>
+</HEAD>
+
+<!— STEP TWO: Copy this code into the BODY of your HTML document —>
+</head>
+
+
+<body>
+
+<div class="head col-12">
+ 
+ <div class="menu col-9">
+ <ul>
+ <a href="#"> <li class="col-1">  ورود/ثبت نام  </li> </a>
+ <a href="#"> <li class="col-1">  سبد خرید </li></a>
+ <a href="#"> <li class="col-1"> کتاب ها</li></a>
+ <a href="#"><li class="col-1"> لپ تاپ</li></a>
+ <a href="#"><li class="col-1"> موسیقی</li></a>
+ <a href="#"><li class="col-1"> هنر</li></a>
+ </ul>
+ </div>
+ <!--man-->
+ <!--<div class="box">
+ <div class="container-1">
+ <input type="search" id="search" placeholder="Search..." />
+ </div>
+</div>-->
+ 
+ <div class="logo col-1">
+ <img src="image/shopping arm.jpg" >
+ </div>
+ <div class="moto col-1"> <span> خرید اینترنتی,فروشگاه go shopping </span></div> 
+ </div>
+ 
+<center>
+
+<form method=get action="javascript:void(0)" onsubmit="search(this); return false;">
+<tr><td><input type=text name=srchval value=""><input type=submit value="Search"></td></tr>
+</form>
+
+</center>
+
+<!-- Script Size: 3.16 KB -->
+
+<!--<div class="product_menu col-1">
+ <ul>
+ <li> <a href="#"> کتاب ها </a></li>
+ <li> <a href="#">لپ تاپ</a></li>
+ <li> <a href="#">موسیقی</a></li>
+ <li> <a href="#">هنر</a></li>
+ </ul>
+ </div>-->
+ 
+ <div class="slideshow col-10">
+</div>
+
+ <div class="tozihat col-8">
+ <ul>
+ <li class="col-2"> <a href="garanti.html">گارانتی </a> </li>
+ <li class="col-2"> <a href="express.html"> تحویل اکسپرس </a></li>
+ <li class="col-2"> <a href="delivery.html">پرداخت در محل </a></li>
+ <li class="col-2"> <a href="#">قیمت مناسب </a></li>
+ </ul>
+ </div>
+ 
+ 
+ <div class="about col-12" about><p> <strong>**درباره ی ما** </strong></p>
+ <p> مردم ایران مانند تمام مردم دنیا، به دسترسی آسان به کالاهای مورد نیاز خود علاقه‌مند هستند؛ اما بسیاری باور دارند که خرید تعداد زیادی از کالاها، در برخی نقاط کشور، بسیار سخت و یا غیر ممکن است.</p>
+ <p>از طرفی بسیاری از تأمین‌کنندگان کالا به دلیل پهناور بودن کشورمان، ناهمگون بودن بافت بازار و نیز هزینه‌های بالای بازاریابی و توزیع، به تمام بازار و موقعیت‌های فروش دسترسی ندارند؛ فضایی که چه تأمین‌کنندگان بزرگ و مشهور و چه تأمین‌کنندگان کوچک و کمتر شناخته‌شده، در آن گرفتار هستند.</p>
+ <p>go shoppingو جایی است که این دو گروه را در یک بازار مجازی به هم می‌رساند. سایتی که از یک طرف به فروشندگان اجازه می‌دهد محصولات خود را در سراسر کشور بدون نیاز برای سرمایه‌گذاری در حوزه‌های گران فناوری اطلاعات و بازاریابی، به فروش برسانند و از طرف دیگر مشتریان را به‌راحتی به طیف گسترده‌ای از محصولات، با استفاده از رایانه و یا تلفن همراه، در مکان و زمان دلخواه‌شان متصل می‌کند.</p>
+ <p></p>
+ <p></p>
+ </div>
+ 
+ 
+</body>
+</html>
+    
+   
+    
+   
+
+
+
+</body>
+</html>

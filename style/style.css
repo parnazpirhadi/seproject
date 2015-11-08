@@ -93,3 +93,126 @@ padding-bottom:10px;
  background-color: #B87F80;
  }
  		
+.img_ketab{
+	height=10px;
+}
+
+<!— *************mahdie***********************-->
+ .titr{
+   margin-top:200px !important;
+  margin-right:10px;
+  color:#B96163;
+  font:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif; 
+   }
+.img_sabad{
+  height:100px !important; 
+  width:70px !important;
+  float:right !important;
+  margin-top:100px;
+  margin-right:0px;
+  
+  
+  }
+  /*.table{
+    font:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-size:16px;
+    margin-top:20px;
+    text-align:center;
+  
+    }*/
+  table , th , td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th , td {
+    padding: 10px;
+    text-align: left;
+}
+
+#grad1 {
+    height:auto;
+    background: -webkit-linear-gradient(left, red , blue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, red, blue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, red, blue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, red , blue); /* Standard syntax (must be last) */
+}
+  
+  
+  
+.lap-item h2 {
+	width:100%;
+	text-align:center;
+	margin-bottom:10px;
+	margin-top:8px;
+	
+}
+.lap-item{
+	border-radius:10px;
+	position:relative;
+	width:30%;
+	background: #f0f0f0;
+	float:right;
+	display:inline-block;
+	margin:1%;
+	padding:1em;
+}
+
+.lap-item img {
+	margin:auto;
+	display:block;
+	min-height:100px;
+	width:auto;
+}
+
+
+.lap-item span {
+ 	margin-top:28px;
+	margin-right:45px;
+ 	float:right;
+	width:40%;
+	display:inline;
+	color:#333333;
+}
+
+.lap-item a {
+	color:#333333;
+ 	width:40%;
+	float:left;
+	border:1px solid gray;
+	text-align:center;
+	margin-top:15px;
+	padding:5px;
+	height:45px;
+	line-height:33px;
+	border-top-left-radius:14px;
+	border-top-right-radius:0px;
+	border-bottom-right-radius:14px;
+	border-bottom-left-radius:0px;
+	transition:border-radius .5s , background .5s;
+}
+
+.lap-item a:hover {
+	
+ 	border-top-left-radius:0px;
+	border-top-right-radius:14px;
+	border-bottom-right-radius:0px;
+	border-bottom-left-radius:14px;
+	background:#e0e0e0;
+}
+
+#btn-back{
+	position:fixed;
+	left:20px;
+	bottom:10px;
+}
+#btn-back:hover{
+
+}
+#btn-back > img:hover{
+	display:block;
+	transform:scale(1.1,1.1);
+}
+
+#btn-back > img{
+	transition:transform .5s;	
+}

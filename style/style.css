@@ -4,9 +4,9 @@
  margin-bottom:0;
  font:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
  font-weight:200;
- padding:10px;
+ padding-top:10px;
  background-color:#C1B4B4;
- border-top:3px solid #3E3B3B;
+
  }
  p{
  text-align:center;}
@@ -156,7 +156,7 @@ th , td {
 	background: #f0f0f0;
 	float:right;
 	display:inline-block;
-	margin:1%;
+	margin:.7%;
 	padding:1em;
 }
 
@@ -170,7 +170,7 @@ th , td {
 
 .lap-item span {
  	margin-top:28px;
-	margin-right:45px;
+	margin-right:30px;
  	float:right;
 	width:40%;
 	display:inline;
@@ -179,7 +179,7 @@ th , td {
 
 .lap-item a {
 	color:#333333;
- 	width:40%;
+ 	width:50%;
 	float:left;
 	border:1px solid gray;
 	text-align:center;
@@ -262,3 +262,137 @@ form#search button img{
 	top:11px;
 	left:-30px;
 }
+.left-nav{
+
+	margin-top:30px;
+	}
+	
+.left-nav ul li{
+	color:#333333 !important;
+	width:85%;
+	margin-left:15%;
+	border-bottom:1px solid #333333;
+	text-align:center;
+	padding-top:20px;
+	padding-bottom:10px;
+	font-size:20px;
+	border-radius:12px;
+	transition:background .4s ,border-radius .4s;
+}
+
+.left-nav ul li a{
+	color:#333333 !important;
+	
+}
+.left-nav ul li:hover{
+	border-radius:0px;
+	
+}
+
+.about {
+	background:#5c5c5c;
+}
+
+.about h2 {
+	text-align:center;
+	color:#f0f0f0;	
+}
+
+
+.about p {
+	color:#f0f0f0;
+	width:29%;
+	margin:2%;
+	font-size:17px;
+	display:inline;
+	float:right;
+	direction:rtl;
+	text-align:justify;
+	line-height:33px;
+}
+.about p:nth-child(5) {
+	width:100%;
+	color:#f0f0f0;
+	text-align:center;
+	background:#3A3A3A;
+	margin:0;
+	}
+	
+
+#garanty-title{
+	width:100%;
+	text-align:center;
+	margin-top:30px;
+	margin-bottom:20px;
+	
+	
+}
+#garanty-p {
+	margin-right: 30px;
+  	-moz-column-count: 3;
+    -moz-column-gap: 40px;
+    -moz-column-rule: 1px solid lightgrey;
+	line-height:33px;
+    padding: 15px;
+    text-align:justify;
+}
+#garanty-sub-title {
+	width:100%;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding-right:40px;
+	
+	
+}
+#pages-p{
+	line-height:30px;
+	margin-right: 20px;
+    padding: 15px;
+    text-align:justify;
+}
+#pages-ul {
+	margin-right:20px;
+	padding:10px;
+}
+#pages-ul li{
+	padding:5px;
+}
+
+
+.login {
+	width:220px;
+	margin-top:13px;
+}
+
+
+.login input{
+	width:170px;
+	height:30px;
+	border: inset;
+	border-radius:8px;
+	box-shadow:none;
+	padding-right:10px;
+	
+}
+
+.login2 {
+	width:100px;
+	margin-top:10px ;
+	
+}
+
+
+.login2 input{
+	width:50px;
+	height:30px;
+	border: inset;
+	border-radius:8px;
+	box-shadow:none;
+	padding-right:10px;
+	
+	float: left!important;
+}
+
+
+
+

@@ -5,6 +5,7 @@
 <title>Go Shopping</title>
 <link rel="stylesheet" type="text/css" href="style/up.css">
 <link rel="stylesheet" type="text/css" href="style/del.css">
+<link rel="stylesheet" type="text/css" href="style/style.css">
 <SCRIPT LANGUAGE="JavaScript">
 
 var item = new Array();
@@ -61,7 +62,7 @@ return 1;
 <body   bgcolor="#D7C3C4">
 <div class="head col-12">
  
- <div class="menu col-9">
+ <div class="menu col-10">
  <ul>
   <a href="#" target="_blank"> <li class="col-1">  ورود/ثبت نام  </li> </a>
  <a href="sabad.html"> <li class="col-1">  سبد خرید </li></a>
@@ -70,6 +71,10 @@ return 1;
  <a href="musiqi.html"><li class="col-1"> موسیقی</li></a>
  <a href="honar.html"><li class="col-1"> هنر</li></a>
  </ul>
+  
+<form id="search" method=get action="javascript:void(0)" onsubmit="search(this); return false;">
+<tr><td><input placeholder="  search...  " type=text name=srchval value=""><button type="submit"><img src="image/search-icon.png" /><button/></td></tr>
+</form>
  </div>
  
  
@@ -82,25 +87,25 @@ return 1;
 
  
  
-<center>
 
-<form method=get action="javascript:void(0)" onsubmit="search(this); return false;">
-<tr><td><input type=text name=srchval value=""><input type=submit value="Search"></td></tr>
-</form>
-
-</center>
-<div class="delivery col-11"><h1> <strong>گارانتی</strong></h1>
- <h2>go shopping; فقط گارانتی اصلی </h2>
- شرکت‌هایی که از طرف وزارت صنعت، معدن و تجارت ﺑﻪ ﻋﻨﻮﺍﻥ ﻭﺍﺭﺩکنندگان ﻗﺎﻧونی ﺩﺭ کشور ﻓﻌﺎلیت می‌کنند ﻭ ﺍﺳﺎمی ﺁﻧﻬﺎ ﺩﺭ ﺳایت این ﻭﺯﺍﺭتخانه ﺫکر ﺷﺪﻩ باید ﮔﺎﺭﺍنتی ﻭ ﺧﺪﻣﺎﺕ ﭘﺲ ﺍﺯ ﻓﺮﻭﺵ نیز ارائه ‌کنند، بنابراین گارانتی‌ اینگونه شرکت‌ها، گارانتی‌ معتبر محسوب می‌شود. به این ترتیب مشتریانی که گارانتی‌های بی نام و نشان آنها را سردرگم کرده است، می‌توانند گارانتی‌های معتبر را از نامعتبر شناسایی کنند. تمامی محصولات ارائه شده در وب سایت go shopping توسط نمایندگان رسمی آن برند در ایران گارانتی شده‌اند و با اخذ مجوزهای لازم، از مبادی قانونی وارد کشور شده‌اند. لازم به ذکر است کلیه کالاهای مشمول گارانتی پس از تحویل به خریدار و عدم استفاده از مهلت 7 روز ضمانت بازگشت، در صورتی که  با هرگونه ایراد و اشکال اعم از نرم افزاری و سخت افزاری و سایر موارد مواجه شوند، بررسی مساله در حوزه صلاحیت شرکت گارانتی کننده مربوط است و دیجی‌کالا هیچگونه مسئولیتی نسبت به مشکلات مزبور نخواهد داشت.
+<div class="delivery col-10"><h1 id="garanty-title">گارانتی</h1>
+<br>
+ <h2 id="garanty-sub-title"> go shopping ، فقط گارانتی اصلی </h2>
  <br>
+ <P id="garanty-p">
+ شرکت‌هایی که از طرف وزارت صنعت، معدن و تجارت ﺑﻪ ﻋﻨﻮﺍﻥ ﻭﺍﺭﺩکنندگان ﻗﺎﻧونی ﺩﺭ کشور ﻓﻌﺎلیت می‌کنند ﻭ ﺍﺳﺎمی ﺁﻧﻬﺎ ﺩﺭ ﺳایت این ﻭﺯﺍﺭتخانه ﺫکر ﺷﺪﻩ باید ﮔﺎﺭﺍنتی ﻭ ﺧﺪﻣﺎﺕ ﭘﺲ ﺍﺯ ﻓﺮﻭﺵ نیز ارائه ‌کنند، بنابراین گارانتی‌ اینگونه شرکت‌ها، گارانتی‌ معتبر محسوب می‌شود. به این ترتیب مشتریانی که گارانتی‌های بی نام و نشان آنها را سردرگم کرده است، می‌توانند گارانتی‌های معتبر را از نامعتبر شناسایی کنند. تمامی محصولات ارائه شده در وب سایت go shopping توسط نمایندگان رسمی آن برند در ایران گارانتی شده‌اند و با اخذ مجوزهای لازم، از مبادی قانونی وارد کشور شده‌اند. لازم به ذکر است کلیه کالاهای مشمول گارانتی پس از تحویل به خریدار و عدم استفاده از مهلت 7 روز ضمانت بازگشت، در صورتی که  با هرگونه ایراد و اشکال اعم از نرم افزاری و سخت افزاری و سایر موارد مواجه شوند، بررسی مساله در حوزه صلاحیت شرکت گارانتی کننده مربوط است و دیجی‌کالا هیچگونه مسئولیتی نسبت به مشکلات مزبور نخواهد داشت.
  بنابراین کلیه کالاهایی که در go shopping عرضه می‌شوند اصلی هستند و به هیچ عنوان کالای کار کرده و یا غیر اصلی در سایت go shopping به فروش نمی‌رسد. از این رو است که go shopping اصل بودن همه محصولات موجود در وب سایت را تضمین می‌کند.
+</P>
+<a href="index.html" id="btn-back" > <img src="image/home-icon.png"/> </a>
+</div>
+  <div class="left-nav col-2">
 
-<!-- Script Size: 3.16 KB -->
-<br>
-<br>
-<br>
-
-<a href="index.html" >بازگشت به صفحه اصلی</a>
-
+ <ul>
+ <li> <a href="garanti.html">گارانتی </a> </li>
+ <li> <a href="express.html"> تحویل اکسپرس </a></li>
+ <li> <a href="delivery.html">پرداخت در محل </a></li>
+ <li> <a href="tazmin.html">قیمت مناسب </a></li>
+ </ul>
+ </div>
 </body>
 </html>

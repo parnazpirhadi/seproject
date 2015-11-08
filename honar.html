@@ -62,15 +62,18 @@ return 1;
 <body   bgcolor="#D7C3C4">
 <div class="head col-12">
  
- <div class="menu col-9">
+ <div class="menu col-10">
  <ul>
- <a href="#" target="_blank"> <li class="col-1">  ورود/ثبت نام  </li> </a>
+ <a href="login.html"> <li class="col-1">  ورود/ثبت نام  </li> </a>
  <a href="sabad.html"> <li class="col-1">  سبد خرید </li></a>
  <a href="ketab.html"> <li class="col-1"> کتاب ها</li></a>
  <a href="laptop.html"><li class="col-1"> لپ تاپ</li></a>
  <a href="musiqi.html"><li class="col-1"> موسیقی</li></a>
  <a href="honar.html"><li class="col-1"> هنر</li></a>
  </ul>
+ <form id="search" method=get action="javascript:void(0)" onsubmit="search(this); return false;">
+<tr><td><input placeholder="  search...  " type=text name=srchval value=""><button type="submit"><img src="image/search-icon.png" /><button/></td></tr>
+</form>
  </div>
  
  
@@ -83,14 +86,8 @@ return 1;
 
  
  
-<center>
 
-<form method=get action="javascript:void(0)" onsubmit="search(this); return false;">
-<tr><td><input type=text name=srchval value=""><input type=submit value="Search"></td></tr>
-</form>
-
-</center>
-<div class="delivery col-11"><h1 style="font-size:25px"> <strong>*اجناس هنری*</strong></h1>
+<div class="delivery col-10"><h1 style="font-size:25px"> <strong>*اجناس هنری*</strong></h1>
 
 <div class="lap-item">
 <h2 style="font-size:20px"> گردنبند قاب عکسی میو مدل N130AF</h2>
@@ -109,6 +106,15 @@ return 1;
 </div>
 
 </div>
+<div class="left-nav col-2">
+
+ <ul>
+ <li> <a href="garanti.html">گارانتی </a> </li>
+ <li> <a href="express.html"> تحویل اکسپرس </a></li>
+ <li> <a href="delivery.html">پرداخت در محل </a></li>
+ <li> <a href="tazmin.html">قیمت مناسب </a></li>
+ </ul>
+ </div>
 
 
 <a href="index.html" id="btn-back" > <img src="image/home-icon.png"/> </a>

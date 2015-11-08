@@ -5,6 +5,7 @@
 <title>Go Shopping</title>
 <link rel="stylesheet" type="text/css" href="style/up.css">
 <link rel="stylesheet" type="text/css" href="style/del.css">
+<link rel="stylesheet" type="text/css" href="style/style.css">
 <SCRIPT LANGUAGE="JavaScript">
 
 var item = new Array();
@@ -60,7 +61,7 @@ return 1;
 <body   bgcolor="#D7C3C4">
 <div class="head col-12">
  
- <div class="menu col-9">
+ <div class="menu col-10">
  <ul>
   <a href="#" target="_blank"> <li class="col-1">  ورود/ثبت نام  </li> </a>
  <a href="sabad.html"> <li class="col-1">  سبد خرید </li></a>
@@ -69,6 +70,9 @@ return 1;
  <a href="musiqi.html"><li class="col-1"> موسیقی</li></a>
  <a href="honar.html"><li class="col-1"> هنر</li></a>
  </ul>
+ <form id="search" method=get action="javascript:void(0)" onsubmit="search(this); return false;">
+<tr><td><input placeholder="  search...  " type=text name=srchval value=""><button type="submit"><img src="image/search-icon.png" /><button/></td></tr>
+</form>
  </div>
  
  <div class="logo col-1">
@@ -76,20 +80,18 @@ return 1;
  </div>
  <div class="moto col-1"> <span> خرید اینترنتی,فروشگاه go shopping </span></div> 
  </div>
- 
-<center>
-
-<form method=get action="javascript:void(0)" onsubmit="search(this); return false;">
-<tr><td><input type=text name=srchval value=""><input type=submit value="Search"></td></tr>
-</form>
-
-
-</center>
-<div class="delivery col-11"><h1> <strong>قیمت مناسب</strong></h1>
-<h2>تضمین بهترین قیمت چیست؟</h2>
-ما تضمین می‌کنیم محصولات عرضه شده در go shopping با گارانتی اصل، بالاترین کیفیت و ارزان‌ترین قیمت نسبت به سایر فروشگاه‌های فیزیکی و اینترنتی در سراسر کشور است. اگر پس از خرید از go shopping، متوجه شدید فروشگاهی همان کالا را با شرایط یکسان و قیمتی پایین‌تر ارائه می‌دهد، می‌توانید درخواست استفاده از «تضمین بهترین قیمت» را ارسال و در صورت تایید، اختلاف قیمت آن را به طور کامل از ما دریافت کنید. 
+<div class="delivery col-10"><h1 id="garanty-title">قیمت مناسب</h1>
 <br>
-<h2>چه شرایطی دارد؟</h2>
+<h2 id="garanty-sub-title">تضمین بهترین قیمت چیست؟</h2>
+<br>
+<p id="pages-p">
+ما تضمین می‌کنیم محصولات عرضه شده در go shopping با گارانتی اصل، بالاترین کیفیت و ارزان‌ترین قیمت نسبت به سایر فروشگاه‌های فیزیکی و اینترنتی در سراسر کشور است. اگر پس از خرید از go shopping، متوجه شدید فروشگاهی همان کالا را با شرایط یکسان و قیمتی پایین‌تر ارائه می‌دهد، می‌توانید درخواست استفاده از «تضمین بهترین قیمت» را ارسال و در صورت تایید، اختلاف قیمت آن را به طور کامل از ما دریافت کنید. 
+</p>
+<br>
+<br>
+<h2 id="garanty-sub-title">چه شرایطی دارد؟</h2>
+<br>
+<p id="pages-p">
 برای ارائه درخواست تضمین بهترین قیمت باید شرایط زیر وجود داشته باشد:
 <br>
 1. مدل یکسان: محصولات باید از نظر ویژگی‌های فنی، رنگ، امکانات و قابلیت‌ها یکسان باشند.
@@ -109,12 +111,22 @@ return 1;
 8. با توجه به رسمی بودن فاکتورهای دیجی‌کالا، فاکتور فروشگاه فیزیکی یا اینترنتی مورد مقایسه نیز باید رسمی و دارای کد اقتصادی و 9% مالیات بر ارزش افزوده باشد.
 <br>
 9. با توجه به لزوم یکسان بودن شرایط مقایسه، اگر لحاظ کردن مواردی مانند هزینه حمل و نقل یا مالیات بر ارزش افزوده، قیمت اولیه اعلام شده توسط فروشنده یا فروشگاه اینترنتی مورد مقایسه را تغییر دهد، ملاک مقایسه قیمت دیجی‌کالا، مبلغ نهایی پرداخت شده توسط خریدار خواهد بود.
+</p>
+</div>
+<div class="left-nav col-2">
 
-<br>
-<br>
-<br>
+ <ul>
+ <li> <a href="garanti.html">گارانتی </a> </li>
+ <li> <a href="express.html"> تحویل اکسپرس </a></li>
+ <li> <a href="delivery.html">پرداخت در محل </a></li>
+ <li> <a href="tazmin.html">قیمت مناسب </a></li>
+ </ul>
+ </div>
 
-<a href="index.html" >بازگشت به صفحه اصلی</a>
+
+
+
+<a href="index.html" id="btn-back" > <img src="image/home-icon.png"/> </a>
 
 </body>
 </html>

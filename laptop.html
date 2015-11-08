@@ -63,7 +63,7 @@ return 1;
 
 <div class="head col-12">
  
- <div class="menu col-9">
+ <div class="menu col-10">
  <ul>
  <a href="#" target="_blank"> <li class="col-1">  ورود/ثبت نام  </li> </a>
  <a href="sabad.html"> <li class="col-1">  سبد خرید </li></a>
@@ -72,6 +72,9 @@ return 1;
  <a href="musiqi.html"><li class="col-1"> موسیقی</li></a>
  <a href="honar.html"><li class="col-1"> هنر</li></a>
  </ul>
+ <form id="search" method=get action="javascript:void(0)" onsubmit="search(this); return false;">
+<tr><td><input placeholder="  search...  " type=text name=srchval value=""><button type="submit"><img src="image/search-icon.png" /><button/></td></tr>
+</form>
  </div>
  
  
@@ -81,17 +84,7 @@ return 1;
  <div class="moto col-1"> <span> خرید اینترنتی,فروشگاه go shopping </span></div> 
  </div>
  
-
- 
- 
-<center>
-
-<form method=get action="javascript:void(0)" onsubmit="search(this); return false;">
-<tr><td><input type=text name=srchval value=""><input type=submit value="Search"></td></tr>
-</form>
-
-</center>
-<div class="delivery col-11"><h1 style="font-size:25px"> <strong>* لیست لپ تاپ ها *</strong></h1>
+<div class="delivery col-10"><h1 style="font-size:25px"> <strong>* لیست لپ تاپ ها *</strong></h1>
 
 
 <div class="lap-item">
@@ -133,6 +126,16 @@ return 1;
 
 
 </div>
+<div class="left-nav col-2">
+
+ <ul>
+ <li> <a href="garanti.html">گارانتی </a> </li>
+ <li> <a href="express.html"> تحویل اکسپرس </a></li>
+ <li> <a href="delivery.html">پرداخت در محل </a></li>
+ <li> <a href="tazmin.html">قیمت مناسب </a></li>
+ </ul>
+ </div>
+
 <a href="index.html" id="btn-back" > <img src="image/home-icon.png"/> </a>
 
 

@@ -3,14 +3,12 @@
 <head>
 <meta charset="utf-8">
 <title>Go Shopping</title>
+<link rel="stylesheet" type="text/css" href="style/style.css">
 <link rel="stylesheet" type="text/css" href="style/up.css">
 <link rel="stylesheet" type="text/css" href="style/del.css">
-<link rel="stylesheet" type="text/css" href="style/style.css">
 <SCRIPT LANGUAGE="JavaScript">
 
 var item = new Array();
-
-
 
 c=0; item[c]=new Array("index.html","","DemoSite","index,main,start,home,front","Demonstration search engine data about an imagined but probable internet site.");
 c++; item[c]=new Array("about.htm","","About Me","about,author,contact,email,who","Contact details and general information about the creator of the site and what the site is about.");
@@ -59,12 +57,12 @@ return 1;
 
 
 <body>
-<body   bgcolor="#D7C3C4">
+
 <div class="head col-12">
  
  <div class="menu col-10">
  <ul>
- <a href="#" target="_blank"> <li class="col-1">  ورود/ثبت نام  </li> </a>
+ <a href="login.html"> <li class="col-1">  ورود/ثبت نام  </li> </a>
  <a href="sabad.html"> <li class="col-1">  سبد خرید </li></a>
  <a href="ketab.html"> <li class="col-1"> کتاب ها</li></a>
  <a href="laptop.html"><li class="col-1"> لپ تاپ</li></a>
@@ -76,47 +74,39 @@ return 1;
 </form>
  </div>
  
+
  
  <div class="logo col-1">
  <img src="image/shopping arm.jpg" >
  </div>
  <div class="moto col-1"> <span> خرید اینترنتی,فروشگاه go shopping </span></div> 
  </div>
-
-<div class="delivery col-10"><h1 style="font-size:25px"> <strong>*آلات موسیقی*</strong></h1>
-<div class="lap-item">
-<h2 style="font-size:20px"> گیتار کلاسیک استگ مدل C442</h2>
-
-<img src="image/g1.jpg">
-<span>قیمت:3300000یال</span>
-<a href="sabad.html" > به سبد خرید اضافه شود </a>
-</div>
-
-<div class="lap-item">
-<h2 style="font-size:20px"> گیتار کلاسیک نیک ساند مدل NK-20 NA</h2>
-
-<img src="image/g2.jpg">
-<span>قیمت:4200000یال</span>
-<a href="sabad.html" >به سبد خرید اضافه شود </a>
-</div>
+ 
 
 
-</div>
-<div class="left-nav col-2">
-
- <ul>
- <li> <a href="garanti.html">گارانتی </a> </li>
- <li> <a href="express.html"> تحویل اکسپرس </a></li>
- <li> <a href="delivery.html">پرداخت در محل </a></li>
- <li> <a href="tazmin.html">قیمت مناسب </a></li>
- </ul>
- </div>
 
 
+<div class="login col-12">
+	<div class="col-4 wrapper">
+    	<form action="">
+        	<input type="text" name="username" class="frm" placeholder="username">
+        	<input type="text" name="password" class="frm" placeholder="password">
+            </form>
+            </div>
+            </div>
+            
+            
+            <div class="login2 col-12">
+			<div class="col-4 wrapper2">
+    		<form action="">
+            <input type="submit" name="submit" class="button" placeholder="ورود">
+            </form>
+            </div>
+            </div>
+          
+            
+       
+       		
 <a href="index.html" id="btn-back" > <img src="image/home-icon.png"/> </a>
-
-
-
-
 </body>
 </html>

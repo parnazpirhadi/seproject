@@ -62,7 +62,7 @@ return 1;
 <body   bgcolor="#D7C3C4">
 <div class="head col-12">
  
- <div class="menu col-9">
+ <div class="menu col-10">
  <ul>
  <li class="col-1"><a href="#" target="_blank">  ورود/ثبت نام  </a></li> 
  <li class="col-1"> <a href="sabad.html">  سبد خرید </a></li>
@@ -71,6 +71,9 @@ return 1;
  <li class="col-1"><a href="musiqi.html"> موسیقی</a></li>
  <li class="col-1"><a href="honar.html"> هنر</a></li>
  </ul>
+ <form id="search" method=get action="javascript:void(0)" onsubmit="search(this); return false;">
+<tr><td><input placeholder="  search...  " type=text name=srchval value=""><button type="submit"><img src="image/search-icon.png" /><button/></td></tr>
+</form>
  </div>
  
  
@@ -80,17 +83,7 @@ return 1;
  <div class="moto col-1"> <span> خرید اینترنتی,فروشگاه go shopping </span></div> 
  </div>
  
-
- 
- 
-<center>
-
-<form method=get action="javascript:void(0)" onsubmit="search(this); return false;">
-<tr><td><input type=text name=srchval value=""><input type=submit value="Search"></td></tr>
-</form>
-
-</center>
-<div class="delivery col-11"><h1 style="font-size:25px"> <strong>*لیست کتاب ها*</strong></h1>
+<div class="delivery col-10"><h1 style="font-size:25px"> <strong>*لیست کتاب ها*</strong></h1>
 <div class="lap-item">
 <h2 style="font-size:20px"> کتاب قانون جذب </h2>
 <img src="image/jazb.jpg">
@@ -120,6 +113,15 @@ return 1;
 </div>
 
 </div>
+<div class="left-nav col-2">
+
+ <ul>
+ <li> <a href="garanti.html">گارانتی </a> </li>
+ <li> <a href="express.html"> تحویل اکسپرس </a></li>
+ <li> <a href="delivery.html">پرداخت در محل </a></li>
+ <li> <a href="tazmin.html">قیمت مناسب </a></li>
+ </ul>
+ </div>
 
 <a href="index.html" id="btn-back" > <img src="image/home-icon.png"/> </a>
 

@@ -38,7 +38,14 @@ ul{
 /*************************************/
 .head{
  height:auto;
- background-color:rgba(216,216,216,1.00);}
+ background-color:#dcdcdc;
+ }
+ 
+ 
+ body{
+	 background:#ffffff !important;
+	 
+	 }
  
 .menu{
  float:right;
@@ -47,24 +54,30 @@ ul{
 .menu ul li {
  display:inline-block;
  list-style:none;
- background-color:rgba(224,223,223,1.00);
+ background:#dcdcdc;
+	transition:color .2s,border-color .2s;
+ 
  padding-top:20px;
  width:150px;
  text-align:center;
  height:80px;
- border-left:1px solid rgba(216,216,216,1.00);
 /* border:1px solid black*/;}
  
 .menu a{
+	line-height:36px;
+
  text-decoration:none;
  color:rgba(0,0,0,1.00);
  width:100%;
  font-weight:800;
  font-size:16px;
- font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;}
+ font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+ }
   .menu ul li:hover{
-	  background-color:rgba(225,63,40,1.00);
-	  border-bottom:3px solid rgba(240,213,98,1.00);}
+	  color:rgba(225,63,40,1.00);
+	  border-bottom:1px solid rgba(225,63,40,1.00);
+	  
+	  }
 
 img{ height:80px;
 width:70px;}
